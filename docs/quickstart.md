@@ -10,6 +10,16 @@ Run in development:
 npm run dev -- --access-token YOUR_PAT --project-ref your-project
 ```
 
+Available tools after startup:
+
+- `list_projects`
+- `execute_sql`
+- `list_tables`
+- `list_extensions`
+- `list_organizations`
+- `get_project_url`
+- `get_anon_key`
+
 Docker image:
 ```bash
 docker build -t supabase-mcp .
