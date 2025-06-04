@@ -1,0 +1,26 @@
+{
+  "name": "supabase-simple-mcp",
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "build": "tsc -b",
+    "start": "node ./dist/bin/supabase-mcp.js",
+    "dev": "ts-node-esm ./bin/supabase-mcp.ts",
+    "test": "vitest"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.39.7",
+    "commander": "^11.0.0",
+    "pg": "^9.1.5",
+    "zod": "^3.22.4",
+    "openai-func-schema": "^1.1.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.3.3",
+    "ts-node": "^10.9.1",
+    "vitest": "^1.3.0"
+  },
+  "bin": {
+    "supabase-mcp": "./dist/bin/supabase-mcp.js"
+  }
+}
