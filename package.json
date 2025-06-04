@@ -13,7 +13,9 @@
     "commander": "^11.0.0",
     "pg": "^9.1.5",
     "zod": "^3.22.4",
-    "openai-func-schema": "^1.1.0"
+    "openai-func-schema": "^1.1.0",
+    "express-rate-limit": "^6.7.0",
+    "p-limit": "^4.0.0"
   },
   "devDependencies": {
     "typescript": "^5.3.3",

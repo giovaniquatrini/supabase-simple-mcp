@@ -38,8 +38,10 @@ const router = toolsRouter
 if (opts.http) {
   console.log(JSON.stringify(hello(actionSpecs)))
   const express = await import('express')
+  const rateLimit = (await import('express-rate-limit')).default
   const app = express.default()
   app.use(express.json())
+  app.use(rateLimit({ windowMs: 1000, max: 10 }))
   app.post('/mcp', async (req, res) => {
     try {
       const result = await router.dispatch(req.body.method, req.body.params, ctx)
